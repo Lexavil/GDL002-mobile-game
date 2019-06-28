@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View, Dimensions, Animated, Image, } from 'react-native';
 import Enemy from './app/components/Enemy';
 
-export default class alexapp extends Component {
+export default class DaGame extends Component {
 
 constructor(props) {
   super(props);
@@ -184,4 +184,4 @@ const styles = StyleSheet.create({
 
 });
 
-AppRegistry.registerComponent('alexapp', () => alexapp);
+AppRegistry.registerComponent('DaGame', () => DaGame);
