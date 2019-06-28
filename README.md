@@ -79,7 +79,7 @@ Como entregables, al final del proyeto debes presentar:
 
 #### Dependencias
 
-##### Expo
+##### Expo  
 
 La manera más fácil de empezar un nuevo proyecto de React Native es usando Expo,
 que es un conjunto de herramientas, librerįas y servicios que nos permiten
