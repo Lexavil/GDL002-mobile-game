@@ -1,9 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 12292,
-  "expoServerNgrokUrl": "https://ke-7fp.anonymous.alexapp.exp.direct",
-  "packagerNgrokUrl": "https://packager.ke-7fp.anonymous.alexapp.exp.direct",
-  "ngrokPid": 18824
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
+  "webpackServerPort": null
 }

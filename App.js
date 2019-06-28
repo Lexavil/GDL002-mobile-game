@@ -30,7 +30,7 @@ constructor(props) {
           </View>
         </View>
         
-        <Animated.Image source={require('./app/img/nave.jpg')}
+        <Animated.Image source={require('./app/img/nave.png')}
         style={{
           height:100,
           width: 100,
