@@ -35,8 +35,8 @@ constructor(props) {
         </View>
         <Animated.Image source={require('./assets/4.png')}
         style={{
-          height:100,
-          width: 100,
+          height:140,
+          width: 140,
           position: 'absolute',
           zIndex: 1,
           bottom: 50,
@@ -147,8 +147,8 @@ animatedEnemy() {
 
   }
 
-  gameOver() {
-    alert('!Sigue Practicando!');
+  gameOver() { 
+    alert('! Sigue Practicando !');
   }
 
   }
