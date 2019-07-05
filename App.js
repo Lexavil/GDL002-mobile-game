@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Text, View, Dimensions, Animated, Image, } from 'react-native';
+import { AppRegistry, StyleSheet, Text, View, Dimensions, Animated, Image, ImageBackground } from 'react-native';
 import Enemy from './app/components/Enemy';
+import Enemy2 from './app/components/Enemy2';
 
 export default class DaGame extends Component {
 
@@ -22,28 +23,34 @@ constructor(props) {
 
   render () {
     return (
-      <Image source={require('./app/img/1.jpg')} style={StyleSheet.container}>
+     
+
+<View>
+      <ImageBackground source={'./assets/fondo.png'} style={{width:'100%', height: '100%'}}>
 
         <View style={{ flex: 1, alignItems: 'center', marginTop: 80 }}>
           <View style={styles.points}>
             <Text style={{ fontWeight: 'bold', fontSize: 40 }}> {this.state.points}</Text>
           </View>
         </View>
-        
-        <Animated.Image source={require('./app/img/nave.png')}
+        <Animated.Image source={require('./assets/4.png')}
         style={{
           height:100,
           width: 100,
           position: 'absolute',
           zIndex: 1,
           bottom: 50,
-          resizeMode: 'strech',
+         
           transform:[
             { translateX: this.state.movePlayerVal }
           ]
         }}></Animated.Image>
 
-        <Enemy enemyImg={require('./app/img/2.jpg')}
+        <Enemy enemyImg={require('./assets/1.png')}
+        enemyStartposX={this.state.enemyStartposX}
+        moveEnemyval={this.state.moveEnemyval} />
+
+        <Enemy2 enemyImg={require('./assets/3.png')}
         enemyStartposX={this.state.enemyStartposX}
         moveEnemyval={this.state.moveEnemyval} />
 
@@ -52,7 +59,8 @@ constructor(props) {
           <Text style={styles.right} onPress={ () => this.movePlayer('right') }> {'>'} </Text>
         </View>
 
-      </Image>
+      </ImageBackground>
+      </View>
     );
     
   }
@@ -140,7 +148,7 @@ animatedEnemy() {
   }
 
   gameOver() {
-    alert('Te aplastaron!');
+    alert('!Sigue Practicando!');
   }
 
   }
@@ -164,21 +172,23 @@ const styles = StyleSheet.create({
   controls: {
     alignItems: 'center',
     flexDirection: 'row',
+    
   },
   right: {
     flex: 1,
-    color: '#fff',
-    margin: 0,
+    color: '#dc143c',
+    margin: 20,
     fontSize: 60,
     fontWeight: 'bold',
-    textAling: 'left'
+    
   },
   left: {
     flex: 1,
-    color: '#fff',
+    margin: 20,
+    color: '#dc143c',
     fontSize: 60,
     fontWeight: 'bold',
-    textAling: 'right'
+    
   },
 
 
