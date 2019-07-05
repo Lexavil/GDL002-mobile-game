@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Text, View, Dimensions, Animated, Image, ImageBackground } from 'react-native';
+import { AppRegistry, StyleSheet, Text, View, Dimensions, Animated, ImageBackground } from 'react-native';
 import Enemy from './app/components/Enemy';
 import Enemy2 from './app/components/Enemy2';
 
-export default class DaGame extends Component {
+export default class miawGame extends Component {
 
 constructor(props) {
   super(props);
@@ -194,4 +194,4 @@ const styles = StyleSheet.create({
 
 });
 
-AppRegistry.registerComponent('DaGame', () => DaGame);
+AppRegistry.registerComponent('miawGame', () => miawGame);
