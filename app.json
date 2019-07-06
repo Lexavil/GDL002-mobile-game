@@ -13,7 +13,7 @@
     "orientation": "portrait",
     "icon": "./assets/4.png",
     "splash": {
-      "image": "./assets/fondo.png",
+      "image": "./assets/1.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

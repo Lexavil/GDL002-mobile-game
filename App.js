@@ -25,10 +25,11 @@ constructor(props) {
     return (
      
 
-<View>
-      <ImageBackground source={'./assets/fondo.png'} style={{width:'100%', height: '100%'}}>
 
-        <View style={{ flex: 1, alignItems: 'center', marginTop: 80 }}>
+<View style={styles.container}>
+     <ImageBackground source={require("../DaGame/assets/5.png")} style={styles.container}>
+     
+        <View style={{ flex: 1, alignItems: 'center', marginTop: 60 }}>
           <View style={styles.points}>
             <Text style={{ fontWeight: 'bold', fontSize: 40 }}> {this.state.points}</Text>
           </View>
@@ -46,11 +47,11 @@ constructor(props) {
           ]
         }}></Animated.Image>
 
-        <Enemy enemyImg={require('./assets/1.png')}
+        <Enemy enemyImg={require('./assets/8.png')}
         enemyStartposX={this.state.enemyStartposX}
         moveEnemyval={this.state.moveEnemyval} />
 
-        <Enemy2 enemyImg={require('./assets/3.png')}
+        <Enemy2 enemyImg={require('./assets/6.png')}
         enemyStartposX={this.state.enemyStartposX}
         moveEnemyval={this.state.moveEnemyval} />
 
@@ -77,7 +78,7 @@ movePlayer(direction) {
       }
     ).start();
 
-  } else if (direction == 'left') {
+  } else if (direction == 'left') { //mover a la izquierda
 
     this.setState({ playerSide: 'left' });
 
@@ -100,7 +101,7 @@ animatedEnemy() {
   var windowH = Dimensions.get('window').height;
 
   //Distancia del enemigo
-  var r = Math.floor(Math.random() * 2) + 1;
+  var r = Math.floor(Math.random() * 2) + 1;  //Devuelve el máximo entero menor o igual a un número.
 
   if (r == 2) {
     r = 40;
@@ -158,7 +159,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     position: 'relative',
-    resizeMode: 'cover',
+    
+    
+    justifyContent: 'center',
   },
   points: {
     width: 80,

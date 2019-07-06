@@ -25,3 +25,6 @@ Como segunda iteración se pondran imagenes aleatorias de electrodomesticos, rop
 
 * Github: https://github.com/Lexavil/GDL002-mobile-game
 * Expo: https://expo.io/@lexavil/alexapp
+
+
+
